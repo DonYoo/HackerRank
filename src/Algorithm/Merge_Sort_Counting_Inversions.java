@@ -51,17 +51,17 @@ public class Merge_Sort_Counting_Inversions {
 
     private static long merge(int[] arr, int lo, int mid, int hi, int[] aux) {
         long count = 0;
-        int i = lo, j = mid + 1, k = lo;
-        while (i <= mid || j <= hi) {
-            if (i > mid) {
-                arr[k++] = aux[j++];
-            } else if (j > hi) {
-                arr[k++] = aux[i++];
-            } else if (aux[i] <= aux[j]) {
-                arr[k++] = aux[i++];
+        int left = lo, right = mid + 1, k = lo;
+        while (left <= mid || right <= hi) {
+            if (left > mid) {
+                arr[k++] = aux[right++];
+            } else if (right > hi) {
+                arr[k++] = aux[left++];
+            } else if (aux[left] <= aux[right]) {
+                arr[k++] = aux[left++];
             } else {
-                arr[k++] = aux[j++];
-                count += mid + 1 - i;
+                arr[k++] = aux[right++];
+                count += mid + 1 - left;
             }
         }
         return count;
