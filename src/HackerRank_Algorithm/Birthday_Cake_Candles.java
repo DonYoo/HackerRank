@@ -9,15 +9,15 @@ import java.util.Scanner;
  *
  *
  *
-Sample Input 0
+Sample Input 
 
 4
 3 2 1 3
-Sample Output 0
+Sample Output 
 
 2
 
-Explanation 0
+Explanation 
 
 We have one candle of height , one candle of height , and two candles of height . 
 Colleen only blows out the tallest candles, meaning the candles where . 

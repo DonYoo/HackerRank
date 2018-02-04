@@ -42,7 +42,7 @@ public class Heaps {
         PriorityQueue< Integer > low = new PriorityQueue <>(Collections.reverseOrder());	//
         PriorityQueue< Integer > high = new PriorityQueue <>();
         
-        for(int a_i=0; a_i < n; a_i++){
+        for(int inputsize=0; inputsize < n; inputsize++){
         	int data = in.nextInt();
         	
         	// if the data is smaller than high peek value, put it in low.
@@ -50,10 +50,10 @@ public class Heaps {
     			low.add(data);
     		}
     		else{
-    			high.add(data);    			
+    			high.add(data);
     		}
     		// if total number list is odd
-        	if( (a_i % 2) == 0){
+        	if( (inputsize % 2) == 0){
         		if (low.size() > high.size()){
         			System.out.printf("%d.0\n", low.peek());
         		}
