@@ -1,9 +1,9 @@
-package Hackerrank;
+package DataStructure;
 import java.util.*;
 
-public class QueueAndStack {
+public class Palindrom {
 
-	public QueueAndStack(){
+	public Palindrom(){
 		testStack = new Stack<String>();
 		testQueue = new LinkedList<String>();
 	}
@@ -21,8 +21,7 @@ public class QueueAndStack {
 	}
 
 	public char dequeueCharacter(){
-		char answer = testQueue.peek().charAt(0);
-		testQueue.remove();
+		char answer = testQueue.poll().charAt(0);
 		return answer;
 	}
 	
@@ -40,7 +39,7 @@ public class QueueAndStack {
         char[] s = input.toCharArray();
 
         // Create a Solution object:
-        QueueAndStack p = new QueueAndStack();
+        Palindrom p = new Palindrom();
 
         // Enqueue/Push all chars to their respective data structures:
         for (char c : s) {

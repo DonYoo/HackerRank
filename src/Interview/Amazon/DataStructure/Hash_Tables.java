@@ -1,4 +1,4 @@
-package Data_Structure;
+package DataStructure;
 
 import java.io.*;
 import java.util.*;
@@ -16,16 +16,17 @@ import java.util.regex.*;
 
 Print Yes if he can use the magazine to create an untraceable replica of his ransom note; otherwise, print No.
 
-Sample Input 0
-
+Sample Input
 6 4
+
 give me one grand today night
 give one grand today
 Sample Output 0
 
 Yes
-Sample Input 1
 
+
+Sample Input
 6 5
 two times three is not four
 two times two is four
